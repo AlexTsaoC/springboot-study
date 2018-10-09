@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"></meta>
+<title>Insert title here</title>
+</head>
+<body>
+	<table>
+        <tr>
+            <th>ID</th>
+            <th>姓名</th>
+        </tr>
+        <tr>
+            <td th:text="${user.id}">0</td>
+            <td th:text="${user.name}">zhansan</td>
+        </tr>
+    </table>
+</body>
+</html>
