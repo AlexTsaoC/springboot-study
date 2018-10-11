@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tsao.blog.dao.PermissionDao">
+
+	<select id="detail" parameterType="Integer" resultType="Permission">
+		select * from sec_permission where id = #{id}
+	</select>
+
+	<select id="queryByRoleId" parameterType="Integer" resultType="Permission">
+		select * from sec_permission where roleId = #{roleId}
+	</select>
+	
+</mapper> 
